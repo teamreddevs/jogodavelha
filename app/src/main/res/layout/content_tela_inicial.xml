@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.reddevs.jogodavelha.TelaInicial"
+    tools:showIn="@layout/activity_tela_inicial">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="JOGO DA VELHA"
+            android:textColor="#FFFFFF"
+            android:textSize="52dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FBBD00"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="04dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_marginRight="04dp"
+                    style="@style/ButtonCustomizado"
+                    android:id="@+id/q01"
+                    android:enabled="false"
+                    android:onClick="clickButton"
+                    android:tag="button1" />
+                <Button
+                    android:layout_marginRight="04dp"
+                    style="@style/ButtonCustomizado"
+                    android:id="@+id/q02"
+                    android:enabled="false"
+                    android:onClick="clickButton"
+                    android:tag="button2"/>
+                <Button
+                    style="@style/ButtonCustomizado"
+                    android:id="@+id/q03"
+                    android:enabled="false"
+                    android:onClick="clickButton"
+                    android:tag="button3"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="04dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_marginRight="04dp"
+                    style="@style/ButtonCustomizado"
+                    android:id="@+id/q04"
+                    android:enabled="false"
+                    android:onClick="clickButton"
+                    android:tag="button4"/>
+                <Button
+                    android:layout_marginRight="04dp"
+                    style="@style/ButtonCustomizado"
+                    android:id="@+id/q05"
+                    android:enabled="false"
+                    android:onClick="clickButton"
+                    android:tag="button5"/>
+                <Button
+                    style="@style/ButtonCustomizado"
+                    android:id="@+id/q06"
+                    android:enabled="false"
+                    android:onClick="clickButton"
+                    android:tag="button6"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_marginRight="04dp"
+                    style="@style/ButtonCustomizado"
+                    android:id="@+id/q07"
+                    android:enabled="false"
+                    android:onClick="clickButton"
+                    android:tag="button7"/>
+                <Button
+                    android:layout_marginRight="04dp"
+                    style="@style/ButtonCustomizado"
+                    android:id="@+id/q08"
+                    android:enabled="false"
+                    android:onClick="clickButton"
+                    android:tag="button8"/>
+                <Button
+                    style="@style/ButtonCustomizado"
+                    android:id="@+id/q09"
+                    android:enabled="false"
+                    android:onClick="clickButton"
+                    android:tag="button9"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/btn"
+            android:layout_gravity="center_horizontal"
+            android:background="#97102E"
+            android:fontFamily="@font/montserrat_bold"
+            android:onClick="novoJogo"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:text="INICIAR"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:typeface="normal"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>
